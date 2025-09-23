@@ -65,7 +65,7 @@ export default function Projects({
         </div>
 
         <div
-          className={`  sm:w-[400px] lg:w-[600px]  ${
+          className={`sm:h-[400px] sm:w-[400px] lg:w-[600px]  ${
             isRight
               ? "lg:order-2 xl:-translate-x-28"
               : "lg:order-0 xl:translate-x-28"
