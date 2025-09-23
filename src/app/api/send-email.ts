@@ -47,7 +47,8 @@ export default async function handler(
     return res.status(200).json({ ok: true });
   } catch (err: unknown) {
     console.error(err);
-    const errorMessage = err instanceof Error ? err.message : "An unknown error occurred";
+    const errorMessage =
+      err instanceof Error ? err.message : "An unknown error occurred";
     return res.status(400).json({ ok: false, error: errorMessage });
   }
 }

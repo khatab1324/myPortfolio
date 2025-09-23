@@ -40,10 +40,17 @@ export async function POST(req: NextRequest) {
 
     if (!info.messageId) throw new Error("Send failed");
     return NextResponse.json({ ok: true }, { status: 200 });
-  } catch (err: any) {
-    console.error(err);
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      console.error(err);
+      return NextResponse.json(
+        { ok: false, error: err.message },
+        { status: 400 }
+      );
+    }
+    console.error("An unknown error occurred");
     return NextResponse.json(
-      { ok: false, error: err.message },
+      { ok: false, error: "An unknown error occurred" },
       { status: 400 }
     );
   }
