@@ -11,7 +11,15 @@ export default function Hero() {
           Hi, Im Khattab
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-          Software engineer
+          <div className="loader flex justify-center">
+            <div className="words text-gray-400">
+              <span className="word">software engineer</span>
+              <span className="word">full-stack</span>
+              <span className="word">back-end engineer</span>
+              <span className="word">computer science</span>
+              <span className="word">software engineer</span>
+            </div>
+          </div>
         </p>
         <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
           I create beautiful, responsive web applications using modern
