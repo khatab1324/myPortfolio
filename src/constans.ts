@@ -91,18 +91,26 @@ export const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "TypeScript", level: 80, color: "bg-blue-600" },
-      { name: "JavaScript", level: 90, color: "bg-yellow-500" },
-      { name: "Lighthouse", level: 35, color: "" },
+      { name: "URA compiler ", level: 25, color: "bg-blue-600" },
+      { name: "TrackIt app", level: 85, color: "bg-yellow-500" },
+      {
+        name: "The Hard Parts of Asynchronous JavaScript Course",
+        level: 35,
+        color: "",
+      },
     ],
     logos: frontendLogos,
   },
   {
     title: "Backend",
     skills: [
-      { name: "ASP.NET", level: 65, color: "bg-green-600" },
-      { name: "Fastify", level: 45, color: "bg-blue-500" },
-      { name: "Database Optimization", level: 75, color: "bg-gray-700" },
+      { name: "URA compiler ", level: 25, color: "bg-blue-600" },
+      { name: "TrackIt app", level: 85, color: "bg-yellow-500" },
+      {
+        name: "The Hard Parts of Asynchronous JavaScript Course",
+        level: 35,
+        color: "",
+      },
     ],
     logos: backendLogos,
   },
@@ -114,12 +122,14 @@ export const projectsList = [
     blurb:
       "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and audio details. Create and save new playlists of recommendations based on your existing playlists.",
     screenshotSrc: trackitImage,
+    src: "https://github.com/khatab1324/trackit",
   },
   {
     title: "Let's Vent",
     blurb:
       "A real-time chat application designed for seamless conversations! Engage in instant messaging with friends and colleagues, share media, and create group chats. Built with Next.js, and Socket.io for a smooth and interactive experience.",
     screenshotSrc: letsventImage,
+    src: "https://github.com/khatab1324/letsvent",
     isRight: false,
   },
   {
@@ -128,6 +138,7 @@ export const projectsList = [
       "This app was built to explore and apply concepts in React, Docker, and prisma through a fully functional project, focusing on CRUD operations and user authentication. It allows users to manage a personal movie list, including adding, editing, and deleting movies",
     screenshotSrc: cinemaListImage,
     onCtaClick: () => window.open("https://your-project-url.com", "_blank"),
+    src: "https://github.com/khatab1324/CinemaList",
   },
   {
     title: "Small Shopify",
@@ -136,5 +147,6 @@ export const projectsList = [
     screenshotSrc: smallShopify,
     onCtaClick: () => window.open("https://your-project-url.com", "_blank"),
     isRight: false,
+    src: "https://github.com/khatab1324/smallshopify",
   },
 ];

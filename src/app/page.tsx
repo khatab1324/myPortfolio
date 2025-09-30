@@ -31,13 +31,13 @@ export default function Home() {
             commands={[
               {
                 type: CommandType.COMMAND,
-                content: "npm install myportfolio -g",
+                content: "npm install myportfolio",
               },
             ]}
           />
         </div>
         <div className="">
-          <section className="py-20 lg:py-32  relative">
+          <section className="px-2 py-20 lg:py-32  relative">
             <Skills />
           </section>
         </div>
@@ -53,7 +53,6 @@ export default function Home() {
             </div>
           </div>
         </TracingBeam>
-
         <Contact />
       </div>
     </div>

@@ -28,12 +28,7 @@ export default function MyTerminal({
   const [currentInput, setCurrentInput] = useState("");
   const [commandsState, setCommandsState] = useState(commands);
   const inputRef = useRef<HTMLInputElement>(null);
-  const scrollRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
-  }, [commandsState]);
+
   const getLineStyle = (type: string) => {
     switch (type) {
       case "command":
@@ -69,10 +64,7 @@ export default function MyTerminal({
           </div>
         </div>
       </div>
-      <div
-        ref={scrollRef}
-        className="rounded-b-lg p-4 font-mono text-sm leading-relaxed bg-gradient-to-br from-gray-900 to-black h-[300px] overflow-y-auto "
-      >
+      <div className="rounded-b-lg p-4 font-mono text-sm leading-relaxed bg-gradient-to-br from-gray-900 to-black h-[300px] overflow-y-auto ">
         {commandsState.map((cmd, index) => (
           <div key={index} className="flex mb-1 ">
             {cmd.type === "command" && (
@@ -119,7 +111,6 @@ export default function MyTerminal({
             }}
             className="flex-1 bg-transparent text-gray-200 outline-none font-mono"
             placeholder="try 'help'"
-            autoFocus
           />
         </div>
       </div>

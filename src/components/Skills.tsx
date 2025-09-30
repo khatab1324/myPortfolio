@@ -25,7 +25,7 @@ function LogoCarousel({ logos, direction = "left" }: LogoCarouselProps) {
           return (
             <div
               key={`first-${index}`}
-              className="flex flex-col items-center justify-center min-w-[80px] h-16 bg-indigo-900/16 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group flex-shrink-0"
+              className="flex flex-col items-center justify-center min-w-[100px] h-20 bg-indigo-900/16 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group flex-shrink-0"
             >
               <IconComponent
                 className={`w-8 h-8 mb-1 ${logo.color} group-hover:scale-110 transition-transform`}
@@ -71,8 +71,8 @@ export default function Skills() {
           direction={activeCategory === 0 ? "left" : "right"}
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-200 to-neutral-600 bg-clip-text text-transparent">
-            skills working on
+          <h2 className="xl:w-4/5 text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-200 to-neutral-600 bg-clip-text text-transparent">
+            Project and courses working on
           </h2>
           {skillCategories[activeCategory].skills.map((skill, index) => (
             <div

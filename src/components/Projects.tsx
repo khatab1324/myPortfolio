@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
 
@@ -11,6 +12,7 @@ type Props = {
   onCtaClick?: () => void;
   className?: string;
   isRight?: boolean;
+  src: string;
 };
 
 export default function Projects({
@@ -22,6 +24,7 @@ export default function Projects({
   onCtaClick,
   className = "",
   isRight = true,
+  src,
 }: Props) {
   return (
     <section className="w-full">
@@ -55,7 +58,12 @@ export default function Projects({
               } lg:ml-auto p-4 sm:p-6 gap-4 sm:gap-6 text-white/70 mt-4`}
             >
               <span className="text-lg sm:text-xl hover:text-white transition-colors cursor-pointer ">
-                <FaGithub size={32} className="sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
+                <Link href={src} target="_blank" rel="noopener noreferrer">
+                  <FaGithub
+                    size={32}
+                    className="sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                  />
+                </Link>
               </span>
               <span className="text-lg sm:text-xl hover:text-white transition-colors cursor-pointer">
                 <GrDeploy size={32} className="sm:w-8 sm:h-8 lg:w-10 lg:h-10" />

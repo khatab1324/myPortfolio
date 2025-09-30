@@ -59,7 +59,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-32 sm:px-4 relative overflow-hidden" id="contact">
+    <section
+      className="mx-5 py-16 sm:px-4 relative overflow-hidden"
+      id="contact"
+    >
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-start mb-16 ">
           <h2 className="w-80 text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-200 to-neutral-800 bg-clip-text text-transparent">

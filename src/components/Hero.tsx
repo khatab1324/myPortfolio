@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaAngleDoubleDown,
+  FaDownload,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import { CosmicButton } from "./ui/customButton";
 import { TbFileDownload } from "react-icons/tb";
 
@@ -47,15 +52,11 @@ export default function Hero() {
             </Link>
           </div>
           <div className="">
-            <Link
-              href="/khattabResume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={"#contact"}>
               <CosmicButton>
                 <span className="flex items-center gap-2">
-                  <TbFileDownload className="w-6 h-6" />
-                  Resume
+                  <FaAngleDoubleDown />
+                  Contact me
                 </span>
               </CosmicButton>
             </Link>
