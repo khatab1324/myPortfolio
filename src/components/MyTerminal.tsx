@@ -110,7 +110,7 @@ export default function MyTerminal({
               }
             }}
             className="flex-1 bg-transparent text-gray-200 outline-none font-mono"
-            placeholder="try 'help'"
+            placeholder="try help"
           />
         </div>
       </div>
