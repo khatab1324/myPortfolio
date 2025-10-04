@@ -11,7 +11,7 @@ export const HighlightBash = ({ content }: { content: string }) => {
           );
         }
         if (
-          /^(git|npm|cd|cp|nano|brew|sudo|apt|psql|xcodebuild|pod|gradlew|npx|yarn|docker|Hello|hello|HELLO)$/.test(
+          /^(Wellcom|git|npm|cd|cp|nano|brew|sudo|apt|psql|xcodebuild|pod|gradlew|npx|yarn|docker|Hello|hello|HELLO)$/.test(
             word
           )
         ) {

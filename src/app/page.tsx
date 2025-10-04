@@ -31,7 +31,7 @@ export default function Home() {
             commands={[
               {
                 type: CommandType.COMMAND,
-                content: "npm install myportfolio",
+                content: "Wellcom to myportfolio",
               },
             ]}
           />
